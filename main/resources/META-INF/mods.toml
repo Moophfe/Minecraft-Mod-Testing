@@ -1,0 +1,37 @@
+modLoader="javafml" #mandatory
+loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+#issueTrackerURL="http://my.issue.tracker/" #optional
+# A list of mods - how many allowed here is determined by the individual mod loader
+[[mods]] #mandatory
+# The modid of the mod
+modId="testingmod" #mandatory
+# The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
+version="0.1" #mandatory
+displayName="Useful Testing Mod" #mandatory
+# updateJSONURL="http://myurl.me/" #optional
+displayURL="https://www.youtube.com/watch?v=dQw4w9WgXcQ" #optional
+# A file name (in the root of the mod JAR) containing a logo for display
+logoFile="Jamon.jpg" #optional
+# A text field displayed in the mod UI
+credits="This is MY shitty mod!! >:( ME ONLY" #optional
+# A text field displayed in the mod UI
+authors="Moophfe"
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+This is my description of a mod that has LITERALLY. NOTHING. But it's okay, I can build something out of it yet.
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.examplemod]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[31,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+# Here's another dependency
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
